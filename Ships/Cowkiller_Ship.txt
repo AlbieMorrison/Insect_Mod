@@ -1,0 +1,228 @@
+model =
+  name: 'Cowkiller'
+  level: 7
+  model: 4
+  size: 1.5
+  specs:
+    shield:
+      capacity: [650,650]
+      reload: [14,14]
+    generator:
+      capacity: [450,450]
+      reload: [120,120]
+    ship:
+      mass: 350
+      speed: [120,120]
+      rotation: [70,70]
+      acceleration: [80,80]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-104,-100,-90,-80,-70,-65,-52,-40,-30,-20,0,20,60,80,90,120]
+        z: [-10,-10,-5,-5,0,5,8,10,10,5,0,-4,-9,-12,-13,-16]
+      width: [0,10,14,13,9,17,20,18,13,17,23,28,28,18,5,0]
+      height: [0,10,14,13,9,17,20,18,13,17,23,28,28,18,5,0]
+      texture: [2,2,2,2,63,63,63,63,3,3,3,3,3,3,12]
+      propeller: false
+      laser:
+        damage: [8,8]
+        rate: 5
+        type: 1
+        speed: [120,120]
+        number: 1
+        angle: 180
+        error: 0
+        recoil: 25
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -93
+        z: 2
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-9,-5,0,5,15]
+        z: [-7,-4,0,3,4]
+      width: [0,6,7,6,0]
+      height: [0,6,8,6,1]
+      texture: [7,9,4]
+      propeller: false
+    engine:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 25
+        z: -14
+      position:
+        x: [0,0,0,0]
+        y: [28,28,42,60]
+        z: [0,0,0,0]
+      width: [12,12,12,12]
+      height: [12,12,12,12]
+      texture: [4]
+      propeller: true
+    side_cannons:
+      section_segments: 8
+      offset:
+        x: 14
+        y: -87
+        z: -5
+      position:
+        x: [0,0,0,0]
+        y: [-15,-6,10,14]
+        z: [0,0,0,0]
+      width: [2,4,4,3]
+      height: [2,4,4,3]
+      texture: [11,9,7,7]
+      propeller: false
+      laser:
+        damage: [6,6]
+        rate: 6
+        type: 2
+        speed: [140,140]
+        number: 1
+        error: 2
+        recoil: 0
+    middle_cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -100
+        z: -10
+      position:
+        x: [0,0,0]
+        y: [-4,-4,0]
+        z: [0,0,0]
+      width: [0,3,3]
+      height: [0,3,3]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [90,90]
+        rate: 1
+        type: 1
+        speed: [180,180]
+        number: 1
+        angle: 0
+        error: 2
+    winglets_front:
+      section_segments: 10
+      offset:
+        x: 53
+        y: -72
+        z: 28
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-10,-8,0,5,10,15,20,15]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,6,6,6,4,4,0]
+      height: [0,5,6,6,6,4,4,0]
+      texture: [6,4,10,10,13]
+      propeller: true
+      laser:
+        damage: [25,25]
+        rate: 1.5
+        type: 2
+        speed: [160,160]
+        number: 1
+        angle: 0
+        error: 0
+        recoil: 15
+    winglets_back:
+      section_segments: 10
+      offset:
+        x: 45
+        y: -41
+        z: 28
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-10,-6,0,5,10,15,20,15]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,6,6,6,4,4,0]
+      height: [0,5,6,6,6,4,4,0]
+      texture: [3,4,10,10,13]
+      propeller: true
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 15
+        y: 0
+        z: 62
+      position:
+        x: [0,0,19,40,53,53]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,0,0,8,8]
+      width: [0,5,3,2,2,0]
+      height: [0,5,3,2,2,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 18
+        y: 0
+        z: 51
+      position:
+        x: [0,0,18,40,55,55]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,0,-3,0,0]
+      width: [0,5,3,2,2,0]
+      height: [0,5,3,2,2,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 15
+        y: 0
+        z: 38
+      position:
+        x: [0,0,25,45,55,55]
+        y: [0,0,0,-6,-8,-8]
+        z: [0,0,0,-8,-13,-13]
+      width: [0,5,3,2,2,0]
+      height: [0,5,3,2,2,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+  wings:
+    front:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [30,20]
+      width: [0,30,15]
+      angle: [5,5]
+      position: [0,-15,-15]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+    back:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [30,15]
+      width: [0,30,15]
+      angle: [5,5]
+      position: [0,15,15]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+return model;

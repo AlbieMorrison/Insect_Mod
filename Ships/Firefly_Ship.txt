@@ -1,0 +1,102 @@
+return model =
+  name: 'Firefly'
+  level: 5
+  model: 5
+  size: 1
+  specs:
+    shield:
+      capacity: [250,350]
+      reload: [7,10]
+    generator:
+      capacity: [150,200]
+      reload: [25,45]
+    ship:
+      mass: 150
+      speed: [100,150]
+      rotation: [80,110]
+      acceleration: [100,130]
+  bodies:
+    main:
+      section_segments: 10
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-98,-95,-70,-40,0,40,70,80,90,100,100]
+        z: [0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,8,20,30,20,20,30,30,30,20,0]
+      height: [0,4,20,20,10,10,15,15,15,10,10,0]
+      texture: [6,63,4,4,3,49,49,49,49]
+      laser:
+        damage: [30,50]
+        rate: 1.5
+        type: 2
+        speed: [100,160]
+        number: 1
+        angle: 0
+        error: 0
+        recoil: 40
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -25
+        z: 12
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-45,-40,-25,0,5]
+        z: [0,0,0,0,0,0]
+      width: [0,10,15,5,0]
+      height: [0,10,15,5,0]
+      texture: [9,9,7]
+    cannons:
+      section_segments: 12
+      offset:
+        x: 60
+        y: 20
+        z: -3
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-25,-30,-20,0,20,30,20]
+        z: [0,0,0,0,0,0,0]
+      width: [0,3,5,5,5,3,0]
+      height: [0,3,5,5,5,3,0]
+      texture: [12,6,63,63,6,12]
+      laser:
+        damage: [5,7]
+        rate: 4
+        type: 1
+        speed: [90,120]
+        number: 1
+        angle: 0
+        error: 2
+    engine:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 36
+        z: 0
+      position:
+        x: [0,0,0,0]
+        y: [28,28,42,60]
+        z: [0,0,0,0]
+      width: [12,12,12,12]
+      height: [8,8,8,12]
+      texture: [4]
+      propeller: true
+  wings:
+    wings:
+      offset:
+        x: 0
+        y: 55
+        z: -2
+      length: [85]
+      width: [110,60]
+      angle: [0]
+      position: [-80,20]
+      texture: [4]
+      bump:
+        position: 10
+        size: 15

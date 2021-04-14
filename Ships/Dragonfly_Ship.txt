@@ -1,0 +1,180 @@
+model =
+  name: 'Dragonfly'
+  level: 6
+  model: 11
+  size: 1.2
+  specs:
+    shield:
+      capacity: [350,425]
+      reload: [9,12]
+    generator:
+      capacity: [175,350]
+      reload: [35,60]
+    ship:
+      mass: 210
+      speed: [110,160]
+      rotation: [60,100]
+      acceleration: [90,120]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-104,-100,-90,-80,-70,-65,-52,-40,-30,-20,0,20,60,80,95,100]
+        z: [-10,-10,-5,-5,0,5,8,10,10,5,0,-4,-9,-12,-13,-16]
+      width: [0,10,13,12,5,15,18,15,6,8,10,12,10,8,5,0]
+      height: [0,10,13,12,5,15,18,15,6,8,10,12,10,8,5,0]
+      texture: [10,10,10,10,63,63,63,63,18,18,18,18,18,18,13]
+      propeller: false
+      laser:
+        damage: [3,5]
+        rate: 5
+        type: 1
+        speed: [50,70]
+        number: 1
+        angle: 180
+        error: 0
+        recoil: 30
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -93
+        z: 1
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-9,-5,0,5,15]
+        z: [-7,-4,0,3,4]
+      width: [0,6,7,6,0]
+      height: [0,6,8,6,1]
+      texture: [7,9,7]
+      propeller: false
+    jaws:
+      section_segments: 8
+      offset:
+        x: 5
+        y: -10
+        z: 102
+      position:
+        x: [0,0,6,5,3,3]
+        y: [0,0,-2,-4,-6,-6]
+        z: [0,0,6,12,14,14]
+      width: [0,2,2,2,2,0]
+      height: [0,2,2,2,2,0]
+      texture: [4]
+      angle: -5
+      vertical: true
+      propeller: false
+      laser:
+        damage: [4,7]
+        rate: 10
+        type: 3
+        speed: [80,140]
+        number: 1
+        angle: 0
+        error: 1
+        recoil: 40
+    middle_cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -102
+        z: -10
+      position:
+        x: [0,0,0]
+        y: [-4,-4,0]
+        z: [0,0,0]
+      width: [0,3,3]
+      height: [0,3,3]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [3,5]
+        rate: 8
+        type: 1
+        speed: [70,130]
+        number: 1
+        angle: 0
+        error: 2
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 10
+        y: 0
+        z: 55
+      position:
+        x: [0,0,18,35,45,45]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,2,10,25,25]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 11
+        y: 0
+        z: 50
+      position:
+        x: [0,0,18,35,40,40]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-1,-2,1,1]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 10
+        y: 0
+        z: 45
+      position:
+        x: [0,0,22,35,40,40]
+        y: [0,0,0,-6,-8,-8]
+        z: [0,0,-4,-8,-18,-18]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+  wings:
+    front:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [75,55]
+      width: [0,40,20]
+      angle: [5,5]
+      position: [0,-21,-21]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+    back:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [65,55]
+      width: [0,35,20]
+      angle: [5,5]
+      position: [0,25,25]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+return model;

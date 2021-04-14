@@ -1,0 +1,182 @@
+model =
+  name: 'Bombardier Beetle'
+  level: 6
+  model: 3
+  size: 2
+  specs:
+    shield:
+      capacity: [375,500]
+      reload: [6,11]
+    generator:
+      capacity: [400,500]
+      reload: [40,60]
+    ship:
+      mass: 270
+      speed: [70,110]
+      rotation: [45,90]
+      acceleration: [20,80]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -98
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [0,0,5,14,18,18]
+        z: [0,0,4,6,0,0]
+      width: [0,4,6,6,5,0]
+      height: [0,2,4,6,2,0]
+      texture: [9]
+    main:
+      section_segments: 20
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-102,-101,-95,-80,-75,-70,-67,-62,-20,-15,-10,-5,0,20,90,100,105,106]
+        z: [-10,-9,-7,-5,-3,-1,0,0,0,0,0,0,0,1,3,4,7,8]
+      width: [0,8,13,13,10,11,14,19,19,17,14,18,25,35,35,24,12,0]
+      height: [0,5,10,10,7,11,11,14,14,14,14,12,14,30,30,12,6,0]
+      texture: [63,63,63,63,10,10,10,10,10,10,4]
+      propeller: false
+      laser:
+        damage: [10,15]
+        rate: 0.5
+        type: 1
+        speed: [45,60]
+        number: 20
+        angle: 180
+        error: 0
+        recoil: 60
+    middle_cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -99
+        z: -9
+      position:
+        x: [0,0,0]
+        y: [-4,-4,0]
+        z: [0,0,0]
+      width: [0,3,3]
+      height: [0,3,3]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [2,3]
+        rate: 1.25
+        type: 1
+        speed: [50,70]
+        number: 8
+        angle: 0
+        error: 0
+        recoil: 5
+    engine:
+      section_segments: 20
+      offset:
+        x: 0
+        y: 70
+        z: 7
+      position:
+        x: [0,0,0]
+        y: [0,0,30]
+        z: [0,0,0]
+      width: [0,12,12]
+      height: [0,6,6]
+      texture: [4]
+      propeller: true
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 13
+        y: 0
+        z: 55
+      position:
+        x: [0,0,13,24,35,35]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-5,15,25,25]
+      width: [0,4,3,1,1,0]
+      height: [0,4,3,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 20
+        y: 0
+        z: 28
+      position:
+        x: [0,0,12,23,38,38]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-6,3,0,0]
+      width: [0,4,3,1,1,0]
+      height: [0,4,3,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 19
+        y: 0
+        z: -5
+      position:
+        x: [0,0,30,35,35,35]
+        y: [0,0,20,-6,-8,-8]
+        z: [0,0,-40,-75,-90,-90]
+      width: [0,7,3,1,1,0]
+      height: [0,7,3,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    antennae:
+      section_segments: 8
+      offset:
+        x: 10
+        y: 0
+        z: 98
+      position:
+        x: [1,1,4,6,8,9,12,14,16]
+        y: [0,0,3,4,5,6,4,3,1]
+        z: [0,0,5,10,15,20,30,40,50]
+      width: [0,2,2,2,2,2,2,2,0]
+      height: [0,2,2,2,2,2,2,2,0]
+      texture: [1]
+      angle: 0
+      vertical: true
+      propeller: false
+    jaws:
+      section_segments: 8
+      offset:
+        x: 4
+        y: 0
+        z: 101
+      position:
+        x: [0,0,3,4,3,1]
+        y: [0,0,-2,-4,-6,-6]
+        z: [0,0,5,7,12,13]
+      width: [0,1,1,1,1,0]
+      height: [0,1,1,1,1,0]
+      texture: [3]
+      angle: 10
+      vertical: true
+      propeller: false
+      laser:
+        damage: [2,3]
+        rate: 1.25
+        type: 1
+        speed: [40,60]
+        number: 8
+        angle: 0
+        error: 0
+        recoil: 5
+return model;
+

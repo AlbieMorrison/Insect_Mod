@@ -1,0 +1,104 @@
+model =
+  name: 'Deerfly'
+  level: 4
+  model: 6
+  size: 1.25
+  specs:
+    shield:
+      capacity: [200,250]
+      reload: [8,12]
+    generator:
+      capacity: [150,250]
+      reload: [30,50]
+    ship:
+      mass: 110
+      speed: [90,130]
+      rotation: [80,110]
+      acceleration: [90,110]
+  bodies:
+    main:
+      section_segments: 10
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-100,-98,-95,-70,-40,0,40,70,80,90,100]
+        z: [0,0,0,0,0,0,0,0,0,0,0]
+      width: [0,10,20,30,40,20,20,40,40,40,20,0]
+      height: [0,4,4,20,20,10,10,15,15,15,10,10]
+      texture: [12,5,63,4,4,63,4,4,5]
+      laser:
+        damage: [35,55]
+        rate: 1
+        type: 3
+        speed: [150, 200]
+        number: 1
+        angle: 0
+        error: 0
+        recoil: 150
+    back:
+      section_segments: 10
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0]
+        y: [90,95,100,105,90]
+        z: [0,0,0,0,0]
+      width: [10,15,18,19,2]
+      height: [3,5,7,8,2]
+      texture: [63]
+      propeller: true
+      laser:
+        damage: [5,8]
+        rate: 7
+        type: 1
+        speed: [150, 175]
+        number: 1
+        angle: 180
+        error: 0
+        recoil: 200
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 15
+        y: -40
+        z: 18
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-45,-40,-25,-10,-5]
+        z: [0,0,0,0,0,0]
+      width: [0,10,15,10,0]
+      height: [0,5,7,5,0]
+      texture: [9]
+    jaws:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -140
+        z: 0
+      position:
+        x: [0, 0, 0, 0]
+        y: [0, 0, 40, 40]
+        z: [0, 0, 0, 0]
+      width: [0, 4, 4, 0]
+      height: [0, 4, 4, 0]
+      texture: [2]
+  wings:
+    side_joins:
+      offset:
+        x: 0
+        y: 28
+        z: -3
+      length: [125]
+      width: [120,50]
+      angle: [-20]
+      position: [-50,90]
+      texture: [7]
+      bump:
+        position: 10
+        size: 12
+return model;

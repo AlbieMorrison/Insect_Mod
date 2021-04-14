@@ -1,0 +1,155 @@
+return model =
+  name: 'Locust'
+  level: 7
+  model: 3
+  size: 2.2
+  specs:
+    shield:
+      capacity: [700,700]
+      reload: [17,17]
+    generator:
+      capacity: [350,350]
+      reload: [30,30]
+    ship:
+      mass: 750
+      speed: [150,150]
+      rotation: [50,50]
+      acceleration: [90,90]
+      dash:
+        rate: 2
+        burst_speed: [300,350]
+        speed: [250,300]
+        acceleration: [250,275]
+        initial_energy: [80,80]
+        energy: [40,40]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 5
+        y: -102
+        z: 7
+      position:
+        x: [0,0,0,0,0,0]
+        y: [0,0,3,8,10,10]
+        z: [0,0,4,6,0,0]
+      width: [0,3,4,4,2,0]
+      height: [0,2,3,3,2,0]
+      texture: [9]
+    main:
+      section_segments: 16
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-110,-106,-95,-90,-80,-75,-10,40,80,85,86]
+        z: [-5,-5,-3,-3,0,0,0,-1,-2,-3,-4]
+      width: [0,8,13,14,12,13,22,20,10,0]
+      height: [0,13,19,20,17,26,29,25,15,0]
+      texture: [13,13,13,13,10,10,10,10,17]
+      propeller: false
+      laser:
+        damage: [30,30]
+        rate: 1.5
+        type: 2
+        speed: [150,150]
+        number: 1
+        angle: 0
+        error: 0
+        recoil: 50
+    engine:
+      section_segments: 20
+      offset:
+        x: 0
+        y: 50
+        z: 0
+      position:
+        x: [0,0,0]
+        y: [0,0,30]
+        z: [0,0,0]
+      width: [0,12,12]
+      height: [0,6,6]
+      texture: [4]
+      propeller: true
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 15
+        y: 0
+        z: 60
+      position:
+        x: [0,0,19,28,48,48]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-5,15,22,22]
+      width: [0,5,3,2,1,0]
+      height: [0,5,3,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 19
+        y: 0
+        z: 30
+      position:
+        x: [0,0,19,30,50,50]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-6,6,0,0]
+      width: [0,5,3,2,1,0]
+      height: [0,5,3,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 16
+        y: 0
+        z: -6
+      position:
+        x: [0,0,40,25,25,25]
+        y: [0,0,35,0,-4,-4]
+        z: [0,0,-40,-90,-120,-120]
+      width: [0,11,4,2,1,0]
+      height: [0,15,4,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    antennae:
+      section_segments: 8
+      offset:
+        x: 7
+        y: 7
+        z: 99
+      position:
+        x: [1,1,7,10,19,22,27,29,29]
+        y: [0,0,3,4,3,-1,-4,-5,-6]
+        z: [0,0,15,20,35,40,50,55,60]
+      width: [0,1,1,1,1,1,1,1,0]
+      height: [0,1,1,1,1,1,1,1,0]
+      texture: [1]
+      angle: 0
+      vertical: true
+      propeller: false
+    backhorns:
+      section_segments: 8
+      offset:
+        x: 2
+        y: 3
+        z: -65
+      position:
+        x: [0,0,10]
+        y: [0,0,25]
+        z: [0,0,-20]
+      width: [0,4,0]
+      height: [0,4,0]
+      texture: [63]
+      angle: 10
+      vertical: true
+      propeller: false

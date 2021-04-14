@@ -1,0 +1,107 @@
+model =
+  name: 'Butterfly'
+  level: 6
+  model: 10
+  size: 1.25
+  specs:
+    shield:
+      capacity: [325,425]
+      reload: [9,14]
+    generator:
+      capacity: [275,400]
+      reload: [35,65]
+    ship:
+      mass: 190
+      speed: [100,150]
+      rotation: [70,100]
+      acceleration: [80,120]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-85,-85,-60,-30,0,20,50,85,100,95]
+        z: [-10,-10,-5,0,0,0,0,0,-5,-10]
+      width: [0,10,20,26,27,27,25,22,12,0]
+      height: [0,10,17,24,26,26,24,20,12,0]
+      texture: [4,4,4,4,11,11,11,17]
+      propeller: true
+      laser:
+        damage: [3,6]
+        rate: 6
+        type: 1
+        speed: [80,100]
+        number: 1
+        angle: 180
+        error: 0
+        recoil: 80
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -45
+        z: 6
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-30,-20,0,30,40]
+        z: [-12,-10,-4,1,1]
+      width: [0,10,15,10,0]
+      height: [0,18,25,18,0]
+      texture: [7,9,7]
+      propeller: false
+    side_cannons:
+      section_segments: 8
+      offset:
+        x: 30
+        y: -5
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0]
+        y: [-75,-60,-20,-20,10,10,65,90,85]
+        z: [0,0,0,0,0,0,0,0,0]
+      width: [3,5,5,4,4,6,6,8,0]
+      height: [3,5,5,4,4,6,6,8,0]
+      texture: [17,16,4,4,4,12,13]
+      propeller: true
+      laser:
+        damage: [15,25]
+        rate: 6
+        type: 4
+        speed: [100,160]
+        number: 1
+        error: 0
+        recoil: 20
+  wings:
+    front:
+      offset:
+        x: 0
+        y: 0
+        z: 24
+      length: [80,20,35]
+      width: [20,120,115,30]
+      angle: [5,5,5]
+      position: [0,-50,-48,-40]
+      texture: [7]
+      bump:
+        position: 0
+        size: 5
+      doubleside: true
+    back:
+      offset:
+        x: 0
+        y: 16
+        z: 24
+      length: [70,20,30]
+      width: [20,90,85,30]
+      angle: [5,5,5]
+      position: [0,40,40,30]
+      texture: [7]
+      bump:
+        position: 0
+        size: 5
+      doubleside: true
+return model;

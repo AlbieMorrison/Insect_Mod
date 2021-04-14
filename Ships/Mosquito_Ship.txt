@@ -1,0 +1,145 @@
+model =
+  name: 'Mosquito'
+  level: 5
+  model: 7
+  size: 1.2
+  specs:
+    shield:
+      capacity: [250,300]
+      reload: [7,10]
+    generator:
+      capacity: [200,300]
+      reload: [25,40]
+    ship:
+      mass: 125
+      speed: [100,150]
+      rotation: [90,110]
+      acceleration: [90,110]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-50,-45,-40,-35,-30,-22,-10,0,10,20,30,40,50,65,75,80]
+        z: [0,0,0,0,0,1,2,4,4,2,0,-4,-9,-12,-13,-16]
+      width: [0,5,9,8,4,10,13,10,1,9,11,11,11,11,5,0]
+      height: [0,5,9,8,4,10,13,10,1,9,11,11,11,11,5,0]
+      texture: [2,2,2,2,63,63,63,63,3,3,3,3,3,3,12]
+      propeller: false
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -40
+        z: 6
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-5,-2,0,2,5]
+        z: [-2,-1,0,1,2]
+      width: [0,2,4,2,0]
+      height: [0,2,4,2,1]
+      texture: [7,9,4]
+      propeller: false
+    middle_cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -60
+        z: 0
+      position:
+        x: [0,0,0]
+        y: [-14,-14,20]
+        z: [0,0,0]
+      width: [0,1,2]
+      height: [0,1,2]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [30,40]
+        rate: 2
+        type: 1
+        speed: [100,150]
+        number: 1
+        error: 10
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 10
+        y: 0
+        z: 18
+      position:
+        x: [0,0,18,35,45,45]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,2,10,25,25]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 11
+        y: 0
+        z: 10
+      position:
+        x: [0,0,18,35,40,40]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-1,-2,1,1]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 10
+        y: 0
+        z: 4
+      position:
+        x: [0,0,22,35,40,40]
+        y: [0,0,0,-6,-8,-8]
+        z: [0,0,-4,-8,-18,-18]
+      width: [0,2,1,1,1,0]
+      height: [0,2,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+  wings:
+    front:
+      offset:
+        x: 0
+        y: -8
+        z: 13
+      length: [40,40]
+      width: [0,20,10]
+      angle: [25,25]
+      position: [0,-15,-15]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+    back:
+      offset:
+        x: 0
+        y: -8
+        z: 13
+      length: [40,55]
+      width: [0,20,10]
+      angle: [25,25]
+      position: [0,13,25]
+      texture: [63]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+return model;

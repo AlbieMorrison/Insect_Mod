@@ -1,0 +1,128 @@
+model =
+  name: 'Mantis'
+  level: 7
+  model: 7
+  size: 3
+  zoom: 0.65
+  specs:
+    shield:
+      capacity: [750,750]
+      reload: [13,13]
+    generator:
+      capacity: [500,500]
+      reload: [150,150]
+    ship:
+      mass: 450
+      speed: [80,80]
+      rotation: [55,55]
+      acceleration: [60,60]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 10
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-117,-114,-111,-108,-105,-100,0,50,80,110,120,112]
+        z: [27,28,40,40,40,40,23,14,8,2,0,0]
+      width: [1,7,14,15,13,8,10,17,15,10,6,0]
+      height: [1,4,7,8,9,10,10,15,13,11,6,0]
+      texture: [49,4,4,4,4,63]
+      propeller: true
+      laser:
+        damage: [90,90]
+        rate: 0.55
+        type: 4
+        speed: [300,300]
+        number: 5
+        angle: 0
+        error: 0
+        recoil: 60
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 7
+        y: -101
+        z: 40
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-4,-2,0,2,4]
+        z: [0,0,0,0,0]
+      width: [0,5,5,4,0]
+      height: [0,5,5,4,0]
+      texture: [9]
+      propeller: false
+    side_cannons:
+      section_segments: 8
+      offset:
+        x: 29
+        y: -94
+        z: -15
+      position:
+        x: [0,0,0,0]
+        y: [0,0,2,2]
+        z: [0,0,0,0]
+      width: [0,2,2,0]
+      height: [0,2,2,0]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [10,10]
+        rate: 0.75
+        type: 4
+        speed: [250,250]
+        number: 1
+        angle: 0
+        error: 0
+        recoil: 30
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 25
+        z: 55
+      position:
+        x: [0,0,20,25,28,30,30]
+        y: [0,0,-35,-20,-5,-20,-35]
+        z: [0,0,8,12,18,25,40]
+      width: [0,3,4,6,4,3,2]
+      height: [0,3,4,6,4,3,2]
+      texture: [4]
+      angle: [10]
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 21
+        z: 10
+      position:
+        x: [0,0,10,20,35,35]
+        y: [0,0,-9,-7,-21,-21]
+        z: [0,0,0,20,40,40]
+      width: [0,4,2,1,1,0]
+      height: [0,4,2,1,1,0]
+      texture: [4]
+      angle: [10]
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 17
+        z: -5
+      position:
+        x: [0,0,15,35,55,55]
+        y: [0,0,-2,20,-17,-17]
+        z: [0,0,0,-10,-30,-31]
+      width: [0,4,2,1,1,0]
+      height: [0,4,2,1,1,0]
+      texture: [4]
+      angle: [10]
+      vertical: true
+      propeller: false
+return model;

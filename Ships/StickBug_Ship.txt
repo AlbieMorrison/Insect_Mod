@@ -1,0 +1,105 @@
+model =
+  name: 'Stick Bug'
+  level: 6
+  model: 12
+  size: 3
+  zoom: 0.7
+  specs:
+    shield:
+      capacity: [375,450]
+      reload: [7,12]
+    generator:
+      capacity: [275,450]
+      reload: [70,110]
+    ship:
+      mass: 350
+      speed: [60,110]
+      rotation: [50,80]
+      acceleration: [50,80]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 10
+        z: 0
+      position:
+        x: [0,0,0,0,0,0]
+        y: [-122,-120,-110,110,120,112]
+        z: [0,0,0,0,0,0]
+      width: [0,4,6,6,4,0]
+      height: [0,4,6,6,4,0]
+      texture: [6,4,4,17,17]
+      propeller: true
+      laser:
+        damage: [44,76]
+        rate: 0.5
+        type: 4
+        speed: [150,220]
+        number: 5
+        angle: 0
+        error: 0
+        recoil: 60
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 0
+        y: -100
+        z: 5
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-9,-5,0,5,15]
+        z: [-7,-4,0,3,4]
+      width: [0,4,5,4,1]
+      height: [0,4,5,4,1]
+      texture: [7,9,7]
+      propeller: false
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 0
+        z: 45
+      position:
+        x: [0,0,18,35,50,50]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,2,10,25,25]
+      width: [0,3,1,1,1,0]
+      height: [0,3,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 0
+        z: 15
+      position:
+        x: [0,0,18,35,50,50]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-1,-2,1,1]
+      width: [0,3,1,1,1,0]
+      height: [0,3,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 5
+        y: 0
+        z: -15
+      position:
+        x: [0,0,22,35,50,50]
+        y: [0,0,0,-6,-8,-8]
+        z: [0,0,-4,-8,-18,-18]
+      width: [0,3,1,1,1,0]
+      height: [0,3,1,1,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+return model;

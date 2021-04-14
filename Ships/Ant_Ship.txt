@@ -1,0 +1,149 @@
+model =
+  name: 'Ant'
+  level: 2
+  model: 1
+  size: 1.25
+  specs:
+    shield:
+      capacity: [125,150]
+      reload: [2,4]
+    generator:
+      capacity: [75,100]
+      reload: [10,12]
+    ship:
+      mass: 75
+      speed: [80,90]
+      rotation: [50,60]
+      acceleration: [70,80]
+  bodies:
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -90
+        z: 10
+      position:
+        x: [0,0,0,0,0,0]
+        y: [0,0,4,20,24,24]
+        z: [0,0,2,3,0,0]
+      width: [0,10,12,14,10,0]
+      height: [0,6,8,10,6,0]
+      texture: [9]
+    main:
+      section_segments: 20
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [68,48,34,24,8,-8,-22,-32,-48,-60,-72,-92,-100,-104]
+        z: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      width: [12,30,34,30,10,18,20,18,12,28,32,28,18,0]
+      height: [12,30,34,30,10,18,20,18,12,28,32,28,18,0]
+      texture: [2,2,2,2,63,63,63,63,2]
+      propeller: false
+      laser:
+        damage: [5,7]
+        rate: 4
+        type: 1
+        speed: [100,120]
+        number: 1
+        angle: 0
+        error: 5
+    engine:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 14
+        z: 0
+      position:
+        x: [0,0,0,0]
+        y: [28,28,42,60]
+        z: [0,0,0,0]
+      width: [12,12,12,12]
+      height: [12,12,12,12]
+      texture: [4]
+      propeller: true
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 18
+        y: 0
+        z: 40
+      position:
+        x: [0,0,14,18,20,20]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,8,12,14,14]
+      width: [0,6,6,6,6,0]
+      height: [0,6,6,6,6,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 22
+        y: 0
+        z: 18
+      position:
+        x: [0,0,14,18,20,20]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,0,0,0,0]
+      width: [0,6,6,6,6,0]
+      height: [0,6,6,6,6,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 16
+        y: 0
+        z: -2
+      position:
+        x: [0,0,14,18,20,20]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-8,-12,-14,-14]
+      width: [0,6,6,6,6,0]
+      height: [0,6,6,6,6,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+    antennae:
+      section_segments: 8
+      offset:
+        x: 18
+        y: 0
+        z: 96
+      position:
+        x: [0,0,14,20,20,20]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,8,16,18,18]
+      width: [0,6,6,6,6,0]
+      height: [0,6,6,6,6,0]
+      texture: [4]
+      angle: -30
+      vertical: true
+      propeller: false
+    jaws:
+      section_segments: 8
+      offset:
+        x: 6
+        y: 0
+        z: 102
+      position:
+        x: [0,0,7,8,6,6]
+        y: [0,0,-2,-4,-6,-6]
+        z: [0,0,6,12,14,14]
+      width: [0,4,4,4,4,0]
+      height: [0,4,4,4,4,0]
+      texture: [4]
+      angle: -5
+      vertical: true
+      propeller: false
+return model;
+

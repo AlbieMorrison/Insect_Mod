@@ -1,0 +1,156 @@
+return model =
+  name: 'Cicada'
+  level: 5
+  model: 2
+  size: 1.7
+  specs:
+    shield:
+      capacity: [275,375]
+      reload: [5,8]
+    generator:
+      capacity: [300,400]
+      reload: [35,50]
+    ship:
+      mass: 200
+      speed: [70,120]
+      rotation: [40,60]
+      acceleration: [50,60]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0]
+        y: [-103,-103,-95,-92,-60,-20,20,50,80,100,90]
+        z: [-10,-10,-8,-5,0,0,0,0,0,0,0,0]
+      width: [0,5,20,40,45,40,35,30,20,10,0]
+      height: [0,5,10,15,30,30,25,20,10,8,0]
+      texture: [10,10,11,3,3,63]
+      propeller: true
+    eyes:
+      section_segments: 10
+      offset:
+        x: 35
+        y: -93
+        z: 5
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-7,-6,-4,0,4,6,7]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,7,8,7,5,0]
+      height: [0,5,7,8,7,5,0]
+      texture: [4,63]
+      propeller: false
+      laser:
+        damage: [1,2]
+        rate: 2
+        type: 1
+        speed: [40,60]
+        number: 12
+        angle: 0
+        error: 0
+        recoil: 3
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -72
+        z: 21
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-15,-10,0,20,25]
+        z: [-12,-8,0,0,0]
+      width: [0,12,18,12,0]
+      height: [0,10,12,10,0]
+      texture: [9,9,4,4]
+      propeller: false
+    legpair1:
+      section_segments: 8
+      offset:
+        x: 40
+        y: 0
+        z: 60
+      position:
+        x: [0,0,19,28,48,48]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-5,15,22,22]
+      width: [0,8,4,2,1,0]
+      height: [0,8,4,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+      laser:
+        damage: [4,8]
+        rate: 2
+        type: 2
+        speed: [70,100]
+        number: 1
+        angle: 90
+        error: 10
+    legpair2:
+      section_segments: 8
+      offset:
+        x: 38
+        y: 0
+        z: 33
+      position:
+        x: [0,0,19,30,50,50]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,-3,3,0,0]
+      width: [0,5,3,2,1,0]
+      height: [0,5,3,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+      laser:
+        damage: [3,6]
+        rate: 2
+        type: 2
+        speed: [70,100]
+        number: 1
+        angle: 90
+        error: 10
+    legpair3:
+      section_segments: 8
+      offset:
+        x: 32
+        y: 0
+        z: 0
+      position:
+        x: [0,0,19,30,50,50]
+        y: [0,0,-2,-6,-8,-8]
+        z: [0,0,10,0,-5,-5]
+      width: [0,5,3,2,1,0]
+      height: [0,5,3,2,1,0]
+      texture: [4]
+      angle: 10
+      vertical: true
+      propeller: false
+      laser:
+        damage: [3,6]
+        rate: 2
+        type: 2
+        speed: [70,100]
+        number: 1
+        angle: 90
+        error: 10
+  wings:
+    main:
+      offset:
+        x: 4
+        y: 10
+        z: 30
+      length: [15,15,17,11]
+      width: [40,160,170,140,0]
+      position: [-35,15,23,20,40]
+      angle: [-10,-20,-30,-40]
+      texture: [4]
+      doubleside: true
+      bump:
+        position: 0
+        size: 3

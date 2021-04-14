@@ -1,0 +1,194 @@
+model =
+  name: 'Queen Bee'
+  level: 7
+  model: 5
+  size: 2
+  specs:
+    shield:
+      capacity: [600,600]
+      reload: [15,15]
+    generator:
+      capacity: [500,500]
+      reload: [110,110]
+    ship:
+      mass: 300
+      speed: [100,100]
+      rotation: [60,60]
+      acceleration: [70,70]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 0
+        y: 0
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        y: [-104,-100,-90,-80,-70,-65,-52,-40,-30,-20,-13,-5,3,10,18,25,33,40,48,55,63,70,78,85,95,105,140]
+        z: [-10,-10,-5,-5,0,5,8,10,10,5,3,1,0,-1,-2,-3,-4,-5,-7,-8,-9,-10,-10,-11,-12,-12,-13,-16]
+      width: [0,8,14,13,5,15,18,15,2,13,15,17,18,20,21,22,23,23,23,23,23,22,20,19,15,5,0]
+      height: [0,8,14,13,5,15,18,15,2,13,15,17,18,20,21,22,23,23,23,23,23,22,20,19,15,5,0]
+      texture: [63,63,63,63,4,4,4,4,3,63,3,63,3,63,3,63,3,63,3,63,3,63,3,63,3,4]
+      propeller: false
+      laser:
+        damage: [6,6]
+        rate: 5
+        type: 1
+        speed: [150,150]
+        number: 1
+        angle: 180
+        error: 0
+        recoil: 20
+    cockpit:
+      section_segments: 12
+      offset:
+        x: 5
+        y: -92
+        z: 3
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-5,-2,0,4,10]
+        z: [-4,-2,1,2,3]
+      width: [0,4,5,4,0]
+      height: [0,4,4,4,1]
+      texture: [7,9,4]
+      propeller: false
+    jaws:
+      section_segments: 8
+      offset:
+        x: 5
+        y: -10
+        z: 100
+      position:
+        x: [0,0,6,5,2,2]
+        y: [0,0,-2,-4,-6,-6]
+        z: [0,0,6,12,14,14]
+      width: [0,2,2,2,2,0]
+      height: [0,2,2,2,2,0]
+      texture: [4]
+      angle: -5
+      vertical: true
+      propeller: false
+    engine:
+      section_segments: 8
+      offset:
+        x: 0
+        y: 30
+        z: -12
+      position:
+        x: [0,0,0,0]
+        y: [28,28,42,60]
+        z: [0,0,0,0]
+      width: [12,12,9,9]
+      height: [12,12,9,9]
+      texture: [4]
+      propeller: true
+    side_cannons:
+      section_segments: 8
+      offset:
+        x: 15
+        y: -85
+        z: -5
+      position:
+        x: [0,0,0,0]
+        y: [-15,-6,10,14]
+        z: [0,0,0,0]
+      width: [2,4,4,3]
+      height: [2,4,4,3]
+      texture: [6,63,13]
+      propeller: false
+      laser:
+        damage: [50,50]
+        rate: 1.5
+        type: 2
+        speed: [160,160]
+        number: 1
+        error: 0
+        recoil: 70
+    middle_cannon:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -100
+        z: -10
+      position:
+        x: [0,0,0]
+        y: [-4,-4,0]
+        z: [0,0,0]
+      width: [0,3,3]
+      height: [0,3,3]
+      texture: [6]
+      propeller: false
+      laser:
+        damage: [10,10]
+        rate: 5
+        type: 1
+        speed: [120,120]
+        number: 1
+        error: 1
+    winglets_front:
+      section_segments: 10
+      offset:
+        x: 133
+        y: -78
+        z: 36
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-15,-12,0,5,10,20,25,20]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,6,6,6,4,4,0]
+      height: [0,5,6,6,6,4,4,0]
+      texture: [6,4,10,10,13]
+      propeller: true
+      laser:
+        damage: [3,3]
+        rate: 9
+        type: 1
+        speed: [70,70]
+        number: 1
+        angle: 0
+        error: 0
+    winglets_back:
+      section_segments: 10
+      offset:
+        x: 118
+        y: -32
+        z: 35
+      position:
+        x: [0,0,0,0,0,0,0,0]
+        y: [-15,-10,0,5,10,20,25,20]
+        z: [0,0,0,0,0,0,0,0]
+      width: [0,5,6,6,6,4,4,0]
+      height: [0,5,6,6,6,4,4,0]
+      texture: [3,4,10,10,13]
+      propeller: true
+  wings:
+    front:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [70,60]
+      width: [0,30,20]
+      angle: [5,5]
+      position: [0,-20,-21]
+      texture: [4]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+    back:
+      offset:
+        x: 0
+        y: -52
+        z: 24
+      length: [60,55]
+      width: [0,30,20]
+      angle: [5,5]
+      position: [0,20,25]
+      texture: [4]
+      bump:
+        position: 0
+        size: 10
+      doubleside: true
+return model;
